@@ -33,7 +33,7 @@ function sendMessage(cont) {
         // replace the url in the "open" method with yours
         request.setRequestHeader('Content-type', 'application/json');
         const params = {
-            username: "Alphakong",
+            username: "SpaceDoodles",
             avatar_url: "",
             content: cont
         }
@@ -44,7 +44,7 @@ function sendMessage(cont) {
 
 let plusBtn = document.querySelector('button[id*="btn-plus"]');
 let minusBtn = document.querySelector('button[id*="btn-minus"]');
-let totalNFTInput = document.querySelector('div[id="totalNFT"]')
+let totalNFTInput = document.querySelector('input[type="number"][id="totalNFT"]')
 let totalETHSpan =  document.querySelector('#totalETH');
 totalNFTInput.value = 1;
 totalETHSpan.innerText = totalNFTInput.value * pricePerNFT;
